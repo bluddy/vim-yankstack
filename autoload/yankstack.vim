@@ -155,7 +155,8 @@ function! yankstack#setup()
   if exists('g:yankstack_did_setup') | return | endif
   let g:yankstack_did_setup = 1
 
-  let yank_keys  = ['c', 'C', 'd', 'D', 's', 'S', 'x', 'X', 'y', 'Y']
+  " removed s and S
+  let yank_keys  = ['c', 'C', 'd', 'D', 'x', 'X', 'y', 'Y']
   let paste_keys = ['p', 'P', 'gp', 'gP']
   let word_characters = split("qwertyuiopasdfghjklzxcvbnm1234567890_", '\zs')
 
